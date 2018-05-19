@@ -1,10 +1,10 @@
-DROP DATABASE IF EXISTS bamazon2;
-CREATE DATABASE bamazon2;
+DROP DATABASE IF EXISTS bamazon;
+CREATE DATABASE bamazon;
 
-USE bamazon2;
+USE bamazon;
 
 CREATE TABLE products(
-  item_id INT AUTO_INCREMENT NOT NULL,
+  item_id INTEGER(10) AUTO_INCREMENT NOT NULL,
   product_name VARCHAR(45) NOT NULL,
   department_name VARCHAR(45) NOT NULL,
   price DECIMAL(10,2) NOT NULL,
@@ -16,7 +16,7 @@ SELECT * FROM products;
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ('Game_Girl','VideoGames',100,12),
-  (Bucky_Charms','Breakfast',5,40),
+  ('Bucky_Charms','Breakfast',5,40),
   ('Gary_Slotter','Books',20,29),
   ('Pikamen','VideoGames',20,32),
   ('Ham_O_Cheese','Lunch',5,1),
